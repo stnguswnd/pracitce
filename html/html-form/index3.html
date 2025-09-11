@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#">
+      <h1>숙소 예약하기</h1>
+      <div>
+        <label for="check_in">체크인</label>
+        <input type="date" name="check_in" id="check_in" />
+      </div>
+      <div>
+        <label for="check_out">체크아웃</label>
+        <input type="date" name="check_out" id="check_out" />
+      </div>
+      <div>
+        <label for="adult">성인</label>
+        <input type="number" min="1" , max="10" id="adult" />
+      </div>
+      <div>
+        <label for="child">어린이</label>
+        <input type="number" id="child" />
+      </div>
+      <div>
+        <p>선호 객실 타입</p>
+        <label for="standard">스탠다드</label>
+        <input type="radio" id="standard" name="room" />
+        <label for="dirux">디럭스</label>
+        <input type="radio" id="dirux" name="room" />
+        <label for="sweet">스위트</label>
+        <input type="radio" id="sweet" name="type" />
+      </div>
+      <div>
+        <label for="request">요청사항</label>
+        <textarea
+          placeholder="특별히 요청하고 싶은 내용을 적어주세요"
+          id="request"
+        ></textarea>
+      </div>
+      <div>
+        <input type="submit" value="예약하기" id="reserved" />
+      </div>
+    </form>
+  </body>
+</html>
