@@ -76,11 +76,11 @@ async function getProductById2(n) {
 // 2. 응답 데이터를 출력한다
 async function getpost() {
   const res = await axios.get(`${BASE_URL}/posts`);
-  const data = res["data"]["posts"][0];
-  console.log(data["tags"]);
+  const data = res["data"]["posts"][0]["tags"];
+  console.log(data);
 }
 
-getpost();
+//getpost();
 
 //답안지 https://dummyjson.com/docs/posts#posts-tag_list 링크 참고
 async function getPostTags() {
